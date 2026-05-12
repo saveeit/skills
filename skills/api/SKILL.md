@@ -1,5 +1,5 @@
 ---
-name: savee-public-api
+name: api
 description: Read the authenticated user's saves, boards, and home feed from Savee.com via its Public REST API. Use when the user wants to fetch their Savee data — latest saves, home feed, or saves on a specific board — from a script, embed, or agent.
 ---
 
