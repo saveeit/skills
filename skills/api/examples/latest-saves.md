@@ -28,7 +28,11 @@ curl 'https://api.savee.com/v1/saves?limit=10' \
         "height": 2400,
         "thumbnail": "https://dm.savee.com/.../poster-thumb.avif",
         "original": "https://dm.savee.com/.../poster.avif"
-      }
+      },
+      "colors": [
+        { "color": "#1A1A1A", "amount": 0.62 },
+        { "color": "#E33124", "amount": 0.21 }
+      ]
     }
   ],
   "next_cursor": "1715190000000",
@@ -40,5 +44,6 @@ curl 'https://api.savee.com/v1/saves?limit=10' \
 
 - `total_saves` is how many users across Savee have saved this same asset (a popularity signal, not the user's count).
 - `media.thumbnail` and `media.original` are AVIF by default. Send `Avif-Fallback: 1` as a request header to receive JPG URLs instead. Video originals are always MP4.
+- `colors` lists the dominant colors of the media as hex + coverage fraction (0–1), most prominent first. It is `[]` when colors haven't been extracted for the asset yet.
 - The `user` field is **omitted** on `/v1/saves` because the caller is implicitly the author. It is present on `/v1/feed` and `/v1/boards/{id}/saves`.
 - For more than 10, paginate by passing `next_cursor` back as `?cursor=…` until `has_more` is `false`. Cursors are opaque — never parse them.

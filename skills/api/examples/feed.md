@@ -29,6 +29,10 @@ curl 'https://api.savee.com/v1/feed?limit=20' \
         "thumbnail": "https://dm.savee.com/.../typo-thumb.avif",
         "original": "https://dm.savee.com/.../typo.avif"
       },
+      "colors": [
+        { "color": "#B4F22E", "amount": 0.54 },
+        { "color": "#101010", "amount": 0.38 }
+      ],
       "user": {
         "id": "5d3f...c1ba",
         "username": "saver42",
