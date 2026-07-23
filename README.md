@@ -1,5 +1,7 @@
 # Savee agent skills
 
+[![skills.sh](https://skills.sh/b/saveeit/skills)](https://skills.sh/saveeit/skills)
+
 [Agent Skills](https://skills.sh/) for [Savee](https://savee.com). Drop them into Claude, Cursor, or any agent that supports the format, and the agent can work with your Savee account through natural language — no client code required.
 
 ## What's inside
